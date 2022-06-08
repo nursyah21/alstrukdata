@@ -1,5 +1,5 @@
 /** 
- * Circular linked list
+ * Double linked list
 */
 
 #include <iostream>
@@ -10,7 +10,7 @@ struct node{
     node *next;
     node *prev;
 
-    node (int data, node *prev, node *next){ //constructor
+    node (int data, node *prev, node *next){ 
         this->data = data;
         this->next = next;
         this->prev = prev;
@@ -25,9 +25,13 @@ struct doubleList{
         size = 0;
     }
     void insertFirst(int data);
+    void insertAfter(int index, int data); //insertAfter(1, 5); 1<->2<->3, 1<->5<->2<->3
     void insertLast(int data);
+
     void deleteFirst();
+    void deleteAt(int index); //deleteAt(2); 1<->2<->3, 1<->3
     void deleteLast();
+
     void printAll();
     
 };
@@ -37,7 +41,7 @@ void doubleList::printAll(){
     while(temp != NULL){
         cout << temp->data;
         temp = temp->next;
-        if(temp != NULL){cout <<"->";}
+        if(temp != NULL){cout <<"<->";}
     }
     cout << "\n";
 }
@@ -59,7 +63,7 @@ void doubleList::insertLast(int data){
 void doubleList::insertFirst(int data){
     node *first = new node(data, NULL, NULL);
     if(start == NULL) {
-        start = first;
+        start = first; 
         end = first;
     }
     else{
@@ -74,6 +78,7 @@ void doubleList::deleteFirst(){
     if(start == NULL) return;
     node *temp = start;
     start = start->next;
+    start->prev = NULL;
     delete temp;
     size--;
 
@@ -96,16 +101,15 @@ void doubleList::deleteLast(){
 
 
 int main(){
-    doubleList *head = new doubleList();
-    head->insertFirst(10);
-    head->insertFirst(20);
-    head->insertLast(30);
-    head->insertLast(40);
-    head->deleteLast();
-    head->deleteLast();
-    head->deleteLast();
+    doubleList head = doubleList();
+    head.insertFirst(20);
+    head.insertLast(80);
+    head.printAll();
+    head.deleteLast();
+    head.printAll();
 
-    head->printAll();
-    
+
+
+
     return 0;
 }
