@@ -26,6 +26,7 @@ struct doubleList{
     }
     void insertFirst(int data);
     void insertAfter(int index, int data); //insertAfter(1, 5); 1<->2<->3, 1<->5<->2<->3
+    
     void insertLast(int data);
 
     void deleteFirst();

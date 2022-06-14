@@ -1,14 +1,17 @@
 CC = g++
 FLAG = -W
-FILE = double_list
+FILE = stack_queue
 
-all: clear compile run
+all: clear run
 
 clear:
 	clear
 
-compile:
+compile: 
 	$(CC) $(FLAG) $(FILE).cpp -o $(FILE).out
 
-run:
-	./$(FILE).out
+run: compile
+	./$(FILE).out  && rm $(FILE).out
+
+	
+
