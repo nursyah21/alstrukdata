@@ -11,9 +11,6 @@ struct node{
 };
 
 struct stack{
-  // just use insert front, and delete front
-  // get code from previous code
-
   node *top;
   int size;
   stack(){
