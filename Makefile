@@ -1,6 +1,6 @@
 CC = g++
 FLAG = -W
-FILE = stack_implementation
+FILE = stack
 FILETEST = stack_queue
 
 all: clear run
