@@ -1,6 +1,7 @@
 CC = g++
 FLAG = -W
-FILE = queue
+FILE = stack_implementation
+FILETEST = stack_queue
 
 all: clear run
 
@@ -14,4 +15,9 @@ run: compile
 	./$(FILE).out  && rm $(FILE).out
 
 	
+test: clear
+	$(CC) $(FLAG) $(FILETEST).cpp -o $(FILETEST).out && \
+	./$(FILETEST).out  && rm $(FILETEST).out
 
+
+	

@@ -70,10 +70,10 @@ void queue::printAll(){
 
 void testQueue(){
   queue *q = new queue();
-  q->debug = true;
+  
   srand((1 << 18)); 
   
-  for(int i=0; i < 10; i++) q->enqueue( 1 + (rand() % 10));
+  for(int i=0; i < 2; i++) q->enqueue( 1 + (rand() % 10));
 
   for(int i=0; i < 3; i++)q->dequeue();
   q->printAll();

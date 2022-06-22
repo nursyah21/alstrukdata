@@ -24,7 +24,7 @@ struct stack{
     }
     else{
       node *temp = new node(val);
-      top->next = temp;
+      temp->next = top;
       top = temp;
     }
     size++;
@@ -50,11 +50,11 @@ struct stack{
 
 void testStack(){
   stack *st = new stack();
-  st->peek();
   st->push(10);
-  st->pop();
-  st->pop();
   st->push(11);
+  
+  
+  st->pop();
   st->peek();
 }
 
@@ -109,7 +109,8 @@ void testQueue(){
 }
 
 int main(){
-  testQueue();
+  // testQueue();
+  testStack();
 
   return 0;
 }
