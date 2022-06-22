@@ -23,7 +23,7 @@ void infixToPostfix(string s){}
 
 // {[]} balanced
 // {[] not balanced
-// {] bot balanced
+// {] not balanced
 void balancedBrackets(string s){
 
 }
