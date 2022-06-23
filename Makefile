@@ -2,6 +2,7 @@ CC = g++
 FLAG = -W
 FILE = stack_implementation
 FILETEST = implementation/balancedBrackets
+FILETEMP = temp
 
 all: clear run
 
@@ -20,4 +21,6 @@ test: clear
 	./$(FILETEST).out  && rm $(FILETEST).out
 
 
-	
+temp: clear
+	$(CC) $(FLAG) $(FILETEMP).cpp -o $(FILETEMP).out && \
+	./$(FILETEMP).out  && rm $(FILETEMP).out	

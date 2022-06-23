@@ -13,4 +13,5 @@ implementation:
   - infixtoPostfix: [infixtoPostfix.cpp](implementation/infixtoPostfix.cpp)
 
 misc:<br>
-readfile: [readfile.cpp](readfile.cpp)
+readfile: [readfile.cpp](readfile.cpp)<br>
+checkos: [check_os.cpp](check_os.cpp)
