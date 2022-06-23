@@ -1,8 +1,8 @@
 # alstrukdata
 
-stack: [stack_custom.h](stack_custom.h)
-queue: [queue.cpp](queue.cpp)
-circular_list: [circular_list.cpp](circular_list.cpp)
+stack: [stack_custom.h](stack_custom.h)<br>
+queue: [queue.cpp](queue.cpp)<br>
+circular_list: [circular_list.cpp](circular_list.cpp)<br>
 double_list: [double_list.cpp](circular_list.cpp)
 
 implementation:
@@ -12,5 +12,5 @@ implementation:
   - balancedBrackets: [balancedBrackets.cpp](implementation/balancedBrackets.cpp)
   - infixtoPostfix: [infixtoPostfix.cpp](implementation/infixtoPostfix.cpp)
 
-misc:
+misc:<br>
 readfile: [readfile.cpp](readfile.cpp)
