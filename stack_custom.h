@@ -21,6 +21,7 @@ struct stack{
   void push(T val);
   void pop();
   T peek();
+  bool isEmpty();
 };
 
 template<typename T>
@@ -48,4 +49,9 @@ void stack<T>::pop(){
 template<typename T>
 T stack<T>::peek(){
   return top->data;
+}
+
+template<typename T>
+bool stack<T>::isEmpty(){
+  return (top == NULL);
 }

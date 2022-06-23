@@ -1,7 +1,7 @@
 CC = g++
 FLAG = -W
 FILE = stack_implementation
-FILETEST = stack_queue
+FILETEST = implementation/balancedBrackets
 
 all: clear run
 
@@ -12,7 +12,7 @@ compile:
 	$(CC) $(FLAG) $(FILE).cpp -o $(FILE).out
 
 run: compile
-	./$(FILE).out  && rm $(FILE).out
+	./$(FILE).out  file.txt && rm $(FILE).out
 
 	
 test: clear
