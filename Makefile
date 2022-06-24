@@ -2,7 +2,7 @@ CC = g++
 FLAG = -W
 FILE = stack_implementation
 FILETEST = implementation/infixtoPostfix
-FILETEMP = temp
+FILETEMP = double_list
 
 all: clear run
 

@@ -77,12 +77,17 @@ void doubleList::insertFirst(int data){
 
 void doubleList::deleteFirst(){
     if(start == NULL) return;
+    if(size == 1){
+        start = NULL;
+        end = NULL;
+        return;
+    }
     node *temp = start;
     start = start->next;
     start->prev = NULL;
+
     delete temp;
     size--;
-
     if(size == 0){
         start = NULL;
         end = NULL;
@@ -98,6 +103,7 @@ void doubleList::deleteLast(){
 
     delete temp;
     size--;
+    if(size == 0) temp = NULL;
 }
 
 
@@ -107,6 +113,17 @@ int main(){
     head.insertLast(80);
     head.printAll();
     head.deleteLast();
+    head.deleteLast();
+    
+    
+    head.printAll();
+    
+    
+
+    return 0;
+    
+    head.insertFirst(20);
+
     head.printAll();
 
 

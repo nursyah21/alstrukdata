@@ -160,6 +160,11 @@ int main(){
     insertLast(5, head);
     insertFirst(10, head);
     deleteLast(head);
+    deleteFirst(head);
+    deleteFirst(head);
+    deleteFirst(head);
+    insertFirst(110, head);
+
     
     printAll(head);
 
