@@ -1,7 +1,7 @@
 CC = g++
 FLAG = -W
 FILE = stack_implementation
-FILETEST = implementation/balancedBrackets
+FILETEST = implementation/infixtoPostfix
 FILETEMP = temp
 
 all: clear run
