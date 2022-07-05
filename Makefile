@@ -1,6 +1,6 @@
 CC = g++
 FLAG = -W
-FILE = stack_implementation
+FILE = tree
 FILETEST = implementation/infixtoPostfix
 FILETEMP = double_list
 
