@@ -34,4 +34,5 @@ checkos: [check_os.cpp](check_os.cpp)
 
 
 compiler-online: https://www.online-cpp.com/
-s://the-algorithms.com/
+
+reference algorithm: https://the-algorithms.com/
